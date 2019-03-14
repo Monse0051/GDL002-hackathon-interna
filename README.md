@@ -1,25 +1,21 @@
 # "Hackathon" de final de _Common Core_, películas
 
-## Índice
+## Prototipo de alta fidelidad
 
-- [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Consideraciones técnicas](#consideraciones-técnicas)
+Home
+![web_Pantalla01](https://drive.google.com/uc?export=view&amp;id=1AEYy-YE8hm1qwfG6s92W2R492ibGUqUK)
 
----
+Movie detail
+![web_Pantalla01](https://drive.google.com/uc?export=view&amp;id=1x8BKxd2_CxX_0FkOz2-mRacoCLTr-HVo)
 
-## Preámbulo
+Search result
+![web_Pantalla01](https://drive.google.com/uc?export=view&amp;id=1_6qivs7bFW2NGRbsBiYq359JTKOR5uPR)
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Amazon Prime Video, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por palomitas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+Not found
+![web_Pantalla01](https://drive.google.com/uc?export=view&amp;id=1gT8hXTT38-kqzBqss9UlQbwQdk87zH5A)
 
-![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+Top 10
+![web_Pantalla01](https://drive.google.com/uc?export=view&amp;id=1srljRLm0nxBWNmpIeVlLScgK0Xwe5cft)
 
 ## Resumen del proyecto
 
