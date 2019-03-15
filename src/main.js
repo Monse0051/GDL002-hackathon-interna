@@ -23,18 +23,24 @@ function showMovieInfo(movie){
     document.getElementById("welcomeScreen").style.display = "none";
     document.getElementById("topClassicsScreen").style.display= "none";
     document.getElementById("topModernScreen").style.display= "none"
+    document.getElementById ("serchedMovies").style.display= "none";
     document.getElementById("movieDetailScreen").style.display = "block";
-  
-    let divMovieInfo = document.getElementById("movieDetailScreen");
-    let movieScreen = divMovieInfo.getElementsByTagName("p");
-  
-     movieScreen[0].innerHTML = "Título: " + movie.Title;
-     movieScreen[1].innerHTML = "<img src='" +  movie.Poster + "'>";
-     movieScreen[2].innerHTML = movie.Runtime;
-     movieScreen[3].innerHTML = "Director: " + movie.Director;
-     movieScreen[4].innerHTML = "Rating: " + movie.imdbRating;
-     movieScreen[5].innerHTML = "Plot: " + movie.Plot;
-   
+
+    if(movie.Response === "True") {
+        let divMovieInfo = document.getElementById("movieDetailScreen");
+        let movieScreen = divMovieInfo.getElementsByTagName("p");
+
+        movieScreen[0].innerHTML = "Título: " + movie.Title;
+        movieScreen[1].innerHTML = "<img src='" + movie.Poster + "'>";
+        movieScreen[2].innerHTML = movie.Runtime;
+        movieScreen[3].innerHTML = "Director: " + movie.Director;
+        movieScreen[4].innerHTML = "Rating: " + movie.imdbRating;
+        movieScreen[5].innerHTML = "Plot: " + movie.Plot;
+    }
+    else {
+        document.getElementById("movieDetailScreen").style.display = "none";
+        document.getElementById("notFoundScreen").style.display = "block";
+    }
       
 }
   
@@ -119,3 +125,28 @@ const startingScreen =()=> {
     };
  
     document.getElementById ("homeBtn").addEventListener("click",startingScreen);
+
+    function search(){
+        document.getElementById ("welcomeScreen").style.display="none";
+        document.getElementById ("welcomeCarrousel").style.display="none";
+        document.getElementById ("movieDetailScreen").style.display="none";
+        document.getElementById ("notFoundScreen").style.display="none";
+        document.getElementById ("topClassicsScreen").style.display="none";
+        document.getElementById ("topModernScreen").style.display="none";
+        document.getElementById ("serchedMovies").style.display= "block";
+
+        let title = document.getElementById("searchBar").value;
+        let url = new URL(MOVIE_API_URL);
+        let urlDataRequest = new URL(`?t=${title}&apikey=${KEY}`, url);
+        
+        fetch(urlDataRequest).then((data) => {
+            // convertimos nuestra data a JSON
+            return data.json();
+        }).then((movieJSONdata) => {
+            showMovieInfo(movieJSONdata);
+        });
+        
+      }
+      
+      document.getElementById("searchBtn").addEventListener("click", search);
+           
