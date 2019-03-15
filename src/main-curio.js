@@ -22,8 +22,8 @@ function showMovieInfo(movie){
     document.getElementById("welcomeScreen").style.display = "none";
     document.getElementById("topClassicsScreen").style.display= "none";
     document.getElementById("topModernScreen").style.display= "none"
-    document.getElementById("searchedMovies").style.display= "none";
-    document.getElementById("curiositiesScreen").style.display="none";
+    document.getElementById ("searchedMovies").style.display= "none";
+    document.getElementById ("curiositiesScreen").style.display="none";
     document.getElementById("movieDetailScreen").style.display = "block";
 
     if(movie.Response === "True") {
@@ -67,9 +67,9 @@ for (let index = 0; index <  topHorrorMoviesIds.length; index++) {
 function topClasicHorrorMovies() {
     document.getElementById("welcomeScreen").style.display= "none";
     document.getElementById("movieDetailScreen").style.display = "none";
-    document.getElementById("notFoundScreen").style.display="none";
+    document.getElementById ("notFoundScreen").style.display="none";
     document.getElementById("topModernScreen").style.display = "none";
-    document.getElementById("curiositiesScreen").style.display="none";
+    document.getElementById ("curiositiesScreen").style.display="none";
     document.getElementById("topClassicsScreen").style.display= "flex";
 let topClasicHorrorMoviesIds =  window.moviesHandler.topClasicHorrorMoviesIds;
 
@@ -85,7 +85,7 @@ for (let index = 0; index <  topClasicHorrorMoviesIds.length; index++) {
             return data.json();
         }).then((dataAsJSON) => {
 
-            fillElements([dataAsJSON], document.getElementById("classicsCarrousel"));
+            fillElements([dataAsJSON], document.getElementById("topClassicsScreen"));
         }
     );
 }
@@ -95,9 +95,9 @@ document.getElementById("topClassicsBtn").addEventListener("click", topClasicHor
 function topModernHorrorMovies() {
     document.getElementById("welcomeScreen").style.display= "none";
     document.getElementById("movieDetailScreen").style.display = "none";
-    document.getElementById("notFoundScreen").style.display="none";
+    document.getElementById ("notFoundScreen").style.display="none";
     document.getElementById("topClassicsScreen").style.display= "none";
-    document.getElementById("curiositiesScreen").style.display="none";
+    document.getElementById ("curiositiesScreen").style.display="none";
     document.getElementById("topModernScreen").style.display= "flex";
 let topModernHorrorMoviesIds =  window.moviesHandler.topModernHorrorMoviesIds;
 
@@ -113,7 +113,7 @@ for (let index = 0; index <  topModernHorrorMoviesIds.length; index++) {
             return data.json();
         }).then((dataAsJSON) => {
 
-            fillElements([dataAsJSON], document.getElementById("modernCarrousel"));
+            fillElements([dataAsJSON], document.getElementById("topModernScreen"));
         }
     );
 }
@@ -122,26 +122,26 @@ document.getElementById("topModernBtn").addEventListener("click", topModernHorro
 
 const backToWelcome =()=> {
 
-    document.getElementById("welcomeScreen").style.display="block";
-    document.getElementById("movieDetailScreen").style.display="none";
-    document.getElementById("notFoundScreen").style.display="none";
-    document.getElementById("topClassicsScreen").style.display="none";
-    document.getElementById("topModernScreen").style.display="none";
-    document.getElementById("searchedMovies").style.display= "none";
-    document.getElementById("curiositiesScreen").style.display="none";
+    document.getElementById ("welcomeScreen").style.display="block";
+    document.getElementById ("movieDetailScreen").style.display="none";
+    document.getElementById ("notFoundScreen").style.display="none";
+    document.getElementById ("topClassicsScreen").style.display="none";
+    document.getElementById ("topModernScreen").style.display="none";
+    document.getElementById ("searchedMovies").style.display= "none";
+    document.getElementById ("curiositiesScreen").style.display="none";
     };
 
     document.getElementById ("homeBtn").addEventListener("click",backToWelcome);
 
     function search(){
-        document.getElementById("welcomeScreen").style.display="none";
-        document.getElementById("welcomeCarrousel").style.display="none";
-        document.getElementById("movieDetailScreen").style.display="none";
-        document.getElementById("notFoundScreen").style.display="none";
-        document.getElementById("topClassicsScreen").style.display="none";
-        document.getElementById("topModernScreen").style.display="none";
-        document.getElementById("curiositiesScreen").style.display="none";
-        document.getElementById("searchedMovies").style.display= "block";
+        document.getElementById ("welcomeScreen").style.display="none";
+        document.getElementById ("welcomeCarrousel").style.display="none";
+        document.getElementById ("movieDetailScreen").style.display="none";
+        document.getElementById ("notFoundScreen").style.display="none";
+        document.getElementById ("topClassicsScreen").style.display="none";
+        document.getElementById ("topModernScreen").style.display="none";
+        document.getElementById ("curiositiesScreen").style.display="none";
+        document.getElementById ("searchedMovies").style.display= "block";
 
         let title = document.getElementById("searchBar").value;
         let url = new URL(MOVIE_API_URL);
@@ -157,16 +157,3 @@ const backToWelcome =()=> {
       }
 
       document.getElementById("searchBtn").addEventListener("click", search);
-
-      const horroFacts =()=> {
-
-          document.getElementById("welcomeScreen").style.display="none";
-          document.getElementById("movieDetailScreen").style.display="none";
-          document.getElementById("notFoundScreen").style.display="none";
-          document.getElementById("topClassicsScreen").style.display="none";
-          document.getElementById("topModernScreen").style.display="none";
-          document.getElementById("searchedMovies").style.display= "none";
-          document.getElementById("curiositiesScreen").style.display="block";
-          };
-
-          document.getElementById ("horrorFacts").addEventListener("click",horroFacts);

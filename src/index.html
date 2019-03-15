@@ -13,27 +13,51 @@
   <main>
     <header id="header">
       <img class="logo headerLogo" alt="Atrocity_logo.png"
-      src="https://drive.google.com/uc?export=view&amp;id=1tphnAMPlE9aa0aotHIRJ7r_1S4B3Pv9B">
-       <button class="headerBtn"><i class="fa fa-home" id= "homeBtn"></i></button>
-       <button class="headerBtn" type="button" id="topClassicsBtn">Top Classics</button>
-       <button class="headerBtn" type="button" id="topModernBtn">Top Modern</button>
+      src="https://drive.google.com/uc?export=view&id=1tphnAMPlE9aa0aotHIRJ7r_1S4B3Pv9B">
+       <button class="headerBtn" id="homeBtn"><img class="imgBtn" alt="homeBtn"
+         src="https://drive.google.com/uc?export=view&id=1piZGPEv29tb0j9dFFaqvPYCFQyfvMxEZ"></button>
+       <button class="headerBtn" type="button" id="topClassicsBtn">TOP CLASSICS</button>
+       <button class="headerBtn" type="button" id="topModernBtn">TOP MODERN</button>
        <input type="search" id="searchBar" name="q">
        <button class="searchBtn"><i class="fas fa-search" id="searchBtn"></i></button>
     </header>
     <content>
 
     <section class="generalScreen" id="welcomeScreen">
-       <p class="whiteText whiteTittle">
+      <p class="whiteText whiteTittle" id="welcomeText">
+        WELCOME TO ATROCITY MOVIES
+        <br> THE BEST SEARCH ENGINE FOR HORROR,
+         <br>TERROR AND SUSPENSE MOVIES.
+        <br> PROCEED WITH PRECAUTION...
+      </p>
+      <!-- <p class="whiteText whiteTittle" id="welcomeText">
          WELCOME TO <img class="logo whiteLogo" alt="Atrocity_logo_blanco.png"
-         src="https://drive.google.com/uc?export=view&amp;id=1cl0Xp5csG7v1rhfngVYzSSd72SpvQanC">
-         <br>THE BEST SEARCH ENGINE FOR HORROR,
-         TERROR AND SUSPENSE MOVIES. <br>PROCEED WITH PRECAUTION...
-       </p>
+         src="https://drive.google.com/uc?export=view&id=1cl0Xp5csG7v1rhfngVYzSSd72SpvQanC">
+         <br> THE BEST SEARCH ENGINE FOR HORROR,
+          <br>TERROR AND SUSPENSE MOVIES.
+         <br> PROCEED WITH PRECAUTION...
+       </p> -->
+
+       <div><p class="whiteText whiteTittle">SHARE YOUR OWN RECOMMENDATIONS WITH THE COMMUNITY</p>
+       <button class="redbtn joinbtn"><a href="https://www.facebook.com/fobicafest/" {outline : none;}>Join!</a></button>
+         </div>
+
        <h2 class="redTittle">ATROCIOUS RECOMMENDATIONS<h2>
        <div class="movieCarrousel" id="welcomeCarrousel"></div>
     </section>
-    <section class="generalScreen" id="movieDetailScreen">
+
+    <section class="generalScreen whiteText" id="movieDetailScreen">
+      <p class="movieText" id="movieTittle"></p>
+      <p class="movieImage"></p>
+      <p class="movieText" id="movieTime"></p>
+      <p class="movieText" id="movieDirector"></p>
+      <p class="movieText" id="movieYear"></p>
+      <p class="movieText" id="movieScore"></p>
+      <p class="movieText moviePlot"></p>
+
+      <button class="redbtn" type="button" id="horrorFacts">Horror<br> facts</button>
     </section>
+
     <section class="generalScreen" id="notFoundScreen">
       <box>
         <p class="whiteText whiteTittle">THIS IS HORRIBLE!</p>
@@ -45,22 +69,40 @@
       </box>
       <img class="logo icon" alt="Atrocity_logo.png"
       src="https://drive.google.com/uc?export=view&amp;id=1yuGAUPZE61i_L2NrNuXkvAmoTHwQGzcY">
-      <p>GET SUPPORT FROM THE COMMUNITY</p>
-      <button>Join!</button>
+      <p class="whiteText whiteTittle">GET SUPPORT FROM THE COMMUNITY</p>
+       <button class="redbtn joinbtn"><a href="https://www.facebook.com/fobicafest/" {outline : none;}>Join!</a></button>
     </section>
-    <section class="generalScreen" id="topClassicsScreen">
+    <section class="generalScreen topScreen" id="topClassicsScreen">
     <h2 class="whiteText whiteTittle">TOP 10 CLASSICS<h2>
+       <div class="movieCarrousel" id="classicsCarrousel"></div>
     </section>
 
-    <section class="generalScreen" id="topModernScreen">
+    <section class="generalScreen topScreen" id="topModernScreen">
     <h2 class="whiteText whiteTittle">TOP 10 MODERN<h2>
+       <div class="movieCarrousel" id="modernCarrousel"></div>
     </section>
 
-    <section class="generalScreen" id="searchedMovies"></section>
+    <section class="generalScreen" id="searchedMovies">
+      <p id="movieTittle"></p>
+      <p class="movieImage"></p>
+      <p id="movieTime"></p>
+      <p id="movieDirector"></p>
+      <p id="movieYear"></p>
+      <p id="movieScore"></p>
+      <p id="moviePlot"></p>
+    </section>
+
+    <section class="generalScreen" id="curiositiesScreen">
+     <iframe class="video" width="793" height="461" src="https://www.youtube.com/embed/5ytjaMfoF2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <p class="whiteText whiteTittle">Muchos creen que la película está maldita porque varios de los actores murieron jóvenes. Heather O’Rourke, la adorable niña, murió a los 12 años y Dominique Dunne a los 22 años. Por otro lado, Will Sampson murió en una cirugía y Julian Beck de cáncer.</p>
+     <br>
+     <iframe class="viedeo" width="752" height="423" src="https://www.youtube.com/embed/BzyYzGPLg3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <p class="whiteText whiteTittle">Durante la filmación de la película, el director William Friendkin llamó a un  sacerdote para que diera la bendición a todo el equipo de producción, ya que desde que iniciaron el rodaje, en los diferentes sets comenzaron a escucharse ruidos extraños, apariciones y hasta se registró un incendio sin motivo aparente que retrasó la produccion durante seis semanas.</p>
+    </section>
 
     </content>
     <footer>
-      <p class="whiteText">© 2019  All Rigths Reserved</p>
+      <p class="whiteText fooText">© 2019  All Rigths Reserved</p>
     </footer>
   </main>
   <script src="data.js"></script>
