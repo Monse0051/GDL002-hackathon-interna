@@ -1,9 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
 * {
-  font-family: sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+  background: url("https://drive.google.com/uc?export=view&id=1x8BKxd2_CxX_0FkOz2-mRacoCLTr-HVo")center fixed repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  /* background-color: #000000; */
+  /* display: -webkit-flex;
+  display: flex; */
+  /* display: grid;
+  grid-template-columns: 1fr 40vw 10vw 10vw 10vw 10vw 1fr;
+  grid-template-rows: 1fr 20vh 50vh 10vh 1fr;
+  grid-template-areas:
+  ". . . . . . ."
+  "header header header header header header header"
+  "content content content content content content content"
+  "footer footer footer footer footer footer footer"
+  ". . . . . . ."; */
+}
+
+header {
+  /* -webkit-align-items: center;
+         align-items: center;
+ -webkit-justify-content: center;
+         justify-content: center; */
+  /* grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 8rem 4rem 4rem 4rem 4rem 1fr;
+  grid-template-rows: .5rem 4rem .5rem;
+  grid-template-areas:
+  ". . . . . . ."
+  ". logo homeBtn topClassicsBtn topModernBtn searchBar searchBtn ."
+  ". . . . . . ."; */
+  display: inline-block;
+  align-items: center;
+  width: 100vw;
+  min-width: 5vh;
+  background: #000000;
+  color: #dd0000;
+}
+
+content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-area: content;
+  display: grid;
+  grid-template-columns: 1rem 1fr 1fr auto 1fr 1fr 1rem;
+  grid-template-rows: 1rem auto 2rem 6rem 1rem;
+  grid-template-areas:
+  ". . . . . . ."
+  ". . . welcomeText . . ."
+  ". . . redTittle . . ."
+  ". welcomeCarrousel welcomeCarrousel welcomeCarrousel welcomeCarrousel welcomeCarrousel ."
+  ". . . . . . ."; */
+
+}
+
+footer {
+  /* grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 10vh;
+  grid-template-areas:
+  ". fooText ."; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* background: #fff; */
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.generalScreen {
+  display: block;
+}
+
+.movieCarrousel {
+  /* grid-area: welcomeCarrousel; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerlogo {
+  height: 3rem;
+  min-height: auto;
+  width: auto;
+  margin: 0 1rem 0 2rem;
+}
+
+.whiteLogo {
+  display: flex;
+  justify-content: space-between;
+  order: 0;
+  height: 2.5rem;
+  min-height: inherit;
+  width: auto;
+  margin: 0 0 1rem 0;
+}
+
+.headerBtn {
+  color: #dd0000;
+  background: #000000;
+  border: none;
+  margin: 0 2rem 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.searchBtn {
+  display: inline-block;
+  height: 1.5rem;
+  width: 2rem;
+  background: #dd0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.searchBar {
+  display: inline-block;
+  max-height: 1rem;
+  margin: 2rem 0;
+}
+
+.redbtn {
+  width: 8rem;
+  height: 4rem;
+  background: #dd0000;
+  color: #ffffff;
+  border: none;
+  border-radius: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.joinbtn {
+  display: flex;
+  justify-content: center;
+  justify: center;
+  font-size: 2rem;
+}
+
+.movieText {
+  font-family: 'Rock Salt';
+}
+
+.movieImage {
+    height: 10rem;
+    width: auto;
+}
+
+.moviePlot {
+  font-size: 1.5rem;
+}
+
+.whiteText {
+  color: #ffffff;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.whiteTittle {
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.redTittle {
+  color: #de0000;
+  align-items: center;
+  /* flex-shrink: ; */
+  margin: 2rem;
+}
+
+.video {
+  display: flex;
+  flex-flow: column;
+}
+.movieImage {
+  height: 20%;
+  width: auto;
+}
+
+#movieTittle {
+  font-size: 2rem;
+}
+
+#homeBtn {
+    grid-area: homeBtn;
+}
+
+#topClassicsBtn {
+  grid-area: topClassicsBtn;
+}
+
+#topModernBtn {
+  grid-area: topModernBtn;
+}
+#searchBar {
+  grid-area: searchBar;
+  border-radius: 0.2rem;
+}
+
+#searchBtn {
+  grid-area: searchBtn;
+}
+
+.fooText {
+  display: flex;
+  /* grid-area: fooText; */
+  /* background: #fff; */
+}
+
+#welcomeCarrousel {
+  display: flex;
+}
+
+#topClassicsScreen {
+  display: none;
+}
+
+#topModernScreen {
+  display: none;
 }
 
 #notFoundScreen{
 display: none;
 }
 
-#
+#curiositiesScreen{
+display: none;
+}

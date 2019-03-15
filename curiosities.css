@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+* {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+  background: url("https://drive.google.com/uc?export=view&id=1x8BKxd2_CxX_0FkOz2-mRacoCLTr-HVo") center fixed repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.whiteText {
+  color: #ffffff;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.whiteTittle {
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: 2rem;
+}
