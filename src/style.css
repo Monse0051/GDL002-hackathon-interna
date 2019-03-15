@@ -2,8 +2,82 @@
   font-family: sans-serif;
 }
 
+html {
+  background-image: url("https://drive.google.com/uc?export=view&amp;id=1x8BKxd2_CxX_0FkOz2-mRacoCLTr-HVo")
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+main {
+
+}
+
+header {
+background: #000000;
+color: #dd0000;
+}
+
+content {
+
+}
+
+.logo {
+  height: 4rem;
+  min-height: inherit;
+  width: auto;
+}
+
+.headerLogo {
+  margin: 0 1rem 0 2rem;
+}
+
+.headerBtn {
+  color: #dd0000;
+  background: #000000;
+  border: none;
+  margin: 0 2rem 1rem 2rem;
+}
+
+.searchBtn {
+  background: #dd0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.whiteText {
+  color: #ffffff;
+}
+
+.whiteTittle {
+  font-size: 1.5rem;
+}
+
+.redTittle {
+  color: #de0000;
+}
+
+#welcomeCarrousel {
+  display: flex;
+}
+
+#topClassicsScreen {
+  display: none;
+}
+
+#topModernScreen {
+  display: none;
+}
+
 #notFoundScreen{
 display: none;
 }
-
-#

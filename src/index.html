@@ -7,59 +7,61 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-     
-    
+
 </head>
 <body>
   <main>
     <header id="header">
-      <img class="logo" alt="Atrocity_logo.png"
-<<<<<<< HEAD
+      <img class="logo headerLogo" alt="Atrocity_logo.png"
       src="https://drive.google.com/uc?export=view&amp;id=1tphnAMPlE9aa0aotHIRJ7r_1S4B3Pv9B">
-      <button class="btn"><i class="fa fa-home"></i></button>
-=======
-      src="http://drive.google.com/uc?export=view&amp;id=1tphnAMPlE9aa0aotHIRJ7r_1S4B3Pv9B">
-      <button class="btn"><i class="fa fa-home" id= "homeBtn"></i></button>
->>>>>>> 642d480560569e33008767c46b0dcbf325b534b7
-         <button type="button" id="topClassicsBtn">Top Classics</button>
-         <button type="button" id="topModernBtn">Top Modern</button>
-         <input type="search" id="searchBar" name="q">
-         <button><i class="fas fa-search" id="searchBtn"></i></button>
+       <button class="headerBtn"><i class="fa fa-home" id= "homeBtn"></i></button>
+       <button class="headerBtn" type="button" id="topClassicsBtn">Top Classics</button>
+       <button class="headerBtn" type="button" id="topModernBtn">Top Modern</button>
+       <input type="search" id="searchBar" name="q">
+       <button class="searchBtn"><i class="fas fa-search" id="searchBtn"></i></button>
     </header>
     <content>
 
     <section class="generalScreen" id="welcomeScreen">
-       <p>
-         Bienvenida a Atrocity Movies, <br>el mejor buscador para películas de horror,
-         terror y suspenso. <br>👀 Procede con precaución...
+       <p class="whiteText whiteTittle">
+         WELCOME TO <img class="logo whiteLogo" alt="Atrocity_logo_blanco.png"
+         src="https://drive.google.com/uc?export=view&amp;id=1cl0Xp5csG7v1rhfngVYzSSd72SpvQanC">
+         <br>THE BEST SEARCH ENGINE FOR HORROR,
+         TERROR AND SUSPENSE MOVIES. <br>PROCEED WITH PRECAUTION...
        </p>
+       <h2 class="redTittle">ATROCIOUS RECOMMENDATIONS<h2>
        <div class="movieCarrousel" id="welcomeCarrousel"></div>
     </section>
     <section class="generalScreen" id="movieDetailScreen">
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      
     </section>
     <section class="generalScreen" id="notFoundScreen">
       <box>
-        <h2>('u.u)<h2>
-          <p>¡Esto es horrible!</p>
-          <p>La película que buscas<br>
-             no aparece en nuestra base de datos.<br>
-             Mientras trabajamos en arreglarlo,<br>
-            puedes consultar nuestras recomendaciones<br>
-             o hacer una nueva búsqueda.</p>
+        <p class="whiteText whiteTittle">THIS IS HORRIBLE!</p>
+        <p class="whiteText whiteTittle">THE MOVIE YOUR LOOKING FOR<br>
+          HAS BEEN NOT FOUND.<br>
+          WHILE WE WORK ON IMPROVING IT,<br>
+          YOU CAN CHECK OUR RECOMMENDATIONS<br>
+          OR START A NEW SEARCH.</p>
       </box>
+      <img class="logo icon" alt="Atrocity_logo.png"
+      src="https://drive.google.com/uc?export=view&amp;id=1yuGAUPZE61i_L2NrNuXkvAmoTHwQGzcY">
+      <p>GET SUPPORT FROM THE COMMUNITY</p>
+      <button>Join!</button>
     </section>
-    <section class="generalScreen" id="topClassicsScreen"></section>
-    <section class="generalScreen" id="topModernScreen"></section>
-    <section class="generalScreen" id="serchedMovies"></section>
+    <section class="generalScreen" id="topClassicsScreen">
+    <h2 class="whiteText whiteTittle">TOP 10 CLASSICS<h2>
+    </section>
+
+    <section class="generalScreen" id="topModernScreen">
+    <h2 class="whiteText whiteTittle">TOP 10 MODERN<h2>
+    </section>
+
+    <section class="generalScreen" id="searchedMovies"></section>
 
     </content>
+    <footer>
+      <p class="whiteText">© 2019  All Rigths Reserved</p>
+    </footer>
   </main>
   <script src="data.js"></script>
   <script src="main.js"></script>
