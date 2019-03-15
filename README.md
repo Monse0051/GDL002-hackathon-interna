@@ -60,20 +60,20 @@ Home
 ![web_Pantalla01](https://drive.google.com/uc?export=view&id=1AEYy-YE8hm1qwfG6s92W2R492ibGUqUK)
 
 Movie detail
-![web_Pantalla01](https://drive.google.com/uc?export=view&id=1x8BKxd2_CxX_0FkOz2-mRacoCLTr-HVo)
+![web_Pantalla02](https://drive.google.com/uc?export=view&id=1_6qivs7bFW2NGRbsBiYq359JTKOR5uPR)
 
 Search result
-![web_Pantalla01](https://drive.google.com/uc?export=view&id=1_6qivs7bFW2NGRbsBiYq359JTKOR5uPR)
+![web_Pantalla03](https://drive.google.com/uc?export=view&id=1gT8hXTT38-kqzBqss9UlQbwQdk87zH5A)
 
 Not found
-![web_Pantalla01](https://drive.google.com/uc?export=view&id=1gT8hXTT38-kqzBqss9UlQbwQdk87zH5A)
+![web_Pantalla04](https://drive.google.com/uc?export=view&id=1srljRLm0nxBWNmpIeVlLScgK0Xwe5cft)
 
 Top 10
-![web_Pantalla01](https://drive.google.com/uc?export=view&id=1srljRLm0nxBWNmpIeVlLScgK0Xwe5cft)
+![web_Pantalla05](https://drive.google.com/uc?export=view&id=1AKYpcd0D_f2C2fhD_ZH-7MlgA5KabOhv)
 
 ### Organización de tareas
 
-1. Se realizo funcionabilidad en su mayoria por parte de Monse y Mara.
-2. La parte de diseño se realizo en su mayoria por parte de Karen y Virginia.
-3. La parte de investigacion (encuestas), en su mayoria por Karen y virginia.
-4. La busqueda de recursos, (busqueda de data de peliculas), en su mayoria por Monse y Mara.
+1. Se realizó funcionabilidad en su mayoría por parte de Monse y Mara.
+2. La parte de diseño se realizó en su mayoria por parte de Karen y Virginia.
+3. La parte de investigacion (encuestas), en su mayoria por Karen y Virginia.
+4. La busqueda de recursos, (busqueda de data de películas), en su mayoria por Monse y Mara.
